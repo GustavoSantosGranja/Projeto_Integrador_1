@@ -15,7 +15,12 @@ from bd import Carros
 app = Flask('carros')
 
 #primeiro método - Visualizar dados (get)
+#app.route -> definir que essa função é a rota para o flask entenda que aquilo precisa ser executado
 @app.route('/carros' methods=['GET'])
+
+def get_carros():
+    return Carros
+
 
 #primeiro método parte  - visualizar dados por ID (get/id)
 
